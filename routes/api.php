@@ -19,9 +19,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('novel/create', [NovelController::class, 'createNovel']);
+Route::post(' novel/create', [NovelController::class, 'createNovel']);
 Route::post('novel/update/{id}', [NovelController::class, 'updateNovel']);
 Route::get('novel/get/{id}', [NovelController::class, 'getNovel']);
 Route::get('novel/get', [NovelController::class, 'getAllNovel']);
+Route::get('novel/genre/{genre}', [NovelController::class, 'getGenre']);
+Route::get('novel/search', [NovelController::class, 'searchNovel']);
 Route::delete('novel/delete/{id}', [NovelController::class, 'deleteNovel']);
 

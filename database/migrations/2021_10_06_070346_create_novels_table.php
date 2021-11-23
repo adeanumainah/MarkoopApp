@@ -20,6 +20,7 @@ class CreateNovelsTable extends Migration
             $table->string('writer');
             $table->longText('sinopsis');
             $table->longText('story');
+            $table->string('image');
             $table->timestamps();
         });
     }

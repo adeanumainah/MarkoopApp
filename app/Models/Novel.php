@@ -14,7 +14,13 @@ class Novel extends Model
         'genre',
         'writer',
         'sinopsis',
-        'story'
+        'story',
+        'image'
     ];
+
+    // public function category()
+    // {
+    //     return $this
+    // }
     
 }
